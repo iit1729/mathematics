@@ -26,6 +26,68 @@ id: "quad-quiz", minutes: 0,
       { q: "In a class of $ 30 $ students, $ 18 $ take Mathematics,$ 12 $ take Physics, and 5 take both subjects. How many students take neither Mathematics nor Physics?", o : ["10", "7", "5", "3"], a : 2, s : "By the principle of inclusion-exclusion, the number of students taking at least one subject is $ 18 + 12 - 5 = 25. $ Subtracting this from the total class size $ 30 - 25 $ gives $ 5 $ students who take neither."},
       { q: "According to De Morgan's Laws, which of the following identities is mathematically correct for any two sets $A$ and $B$", o : ["(A &cup; B)'= A' &cup; B'", "(A &cup; B)' = A' &cap; B'", "(A &cap; B)= A' &cap; B'", "(A &cap; B)'= A &cup; B"], a : 1, s : "De Morgan's Law states that the complement of the union of two sets is equal to the intersection of their individual complements: $(A &cup; B)' = A' &cap; B'.$ "},
 
+  {
+    q: "The roots of the quadratic equation $x^2 - 5x + 6 = 0$ are:",
+    o: ["2, 3", "1, 6", "-2, -3", "3, 4"],
+    a: 0,
+    s: "Factorizing, $x^2 - 5x + 6 = (x - 2)(x - 3) = 0$. Hence, $x = 2$ or $x = 3$."
+  },
+  {
+    q: "If the discriminant of a quadratic equation is zero, then its roots are:",
+    o: ["Real and distinct", "Real and equal", "Imaginary", "Irrational"],
+    a: 1,
+    s: "The discriminant is $D = b^2 - 4ac$. If $D = 0$, then the roots are real and equal."
+  },
+  {
+    q: "The sum of the roots of $2x^2 - 7x + 3 = 0$ is:",
+    o: ["$\\frac{3}{2}$", "$\\frac{7}{2}$", "$-\\frac{7}{2}$", "$2$"],
+    a: 1,
+    s: "For $ax^2 + bx + c = 0$, the sum of roots is $-\\frac{b}{a}$. Therefore, $-\\frac{-7}{2} = \\frac{7}{2}$."
+  },
+  {
+    q: "The product of the roots of $3x^2 + 5x - 2 = 0$ is:",
+    o: ["$\\frac{5}{3}$", "$-\\frac{2}{3}$", "$\\frac{2}{3}$", "$-\\frac{5}{3}$"],
+    a: 1,
+    s: "The product of roots is $\\frac{c}{a}$. Hence, $\\frac{-2}{3} = -\\frac{2}{3}$."
+  },
+  {
+    q: "For what value of $k$ does the equation $x^2 + kx + 9 = 0$ have equal roots?",
+    o: ["$k = 6$", "$k = -6$", "$k = \\pm 6$", "$k = 9$"],
+    a: 2,
+    s: "For equal roots, $D = 0$. Thus, $k^2 - 4(1)(9) = 0$. Therefore, $k^2 = 36$, giving $k = \\pm 6$."
+  },
+  {
+    q: "If one root of $x^2 - 8x + k = 0$ is 3, then the value of $k$ is:",
+    o: ["15", "18", "21", "24"],
+    a: 0,
+    s: "Substitute $x = 3$: $3^2 - 8(3) + k = 0$. Thus, $9 - 24 + k = 0$, giving $k = 15$."
+  },
+  {
+    q: "The quadratic equation whose roots are 4 and -2 is:",
+    o: ["$x^2 - 2x - 8 = 0$", "$x^2 + 2x - 8 = 0$", "$x^2 - 6x + 8 = 0$", "$x^2 + 6x - 8 = 0$"],
+    a: 0,
+    s: "Sum of roots = $4 + (-2) = 2$. Product = $4(-2) = -8$. The equation is $x^2 - 2x - 8 = 0$."
+  },
+  {
+    q: "The nature of roots of $2x^2 + 3x + 5 = 0$ is:",
+    o: ["Real and equal", "Real and distinct", "Non-real and distinct", "Both roots are zero"],
+    a: 2,
+    s: "The discriminant is $D = 3^2 - 4(2)(5) = 9 - 40 = -31$. Since $D < 0$, the roots are non-real and distinct."
+  },
+  {
+    q: "If the roots of $x^2 - 7x + 10 = 0$ are $\\alpha$ and $\\beta$, then $\\alpha^2 + \\beta^2$ is:",
+    o: ["29", "39", "49", "19"],
+    a: 0,
+    s: "We know $\\alpha + \\beta = 7$ and $\\alpha\\beta = 10$. Hence, $\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = 49 - 20 = 29$."
+  },
+  {
+    q: "If the roots of $x^2 + 4x + 1 = 0$ are $\\alpha$ and $\\beta$, then $\\frac{1}{\\alpha} + \\frac{1}{\\beta}$ is:",
+    o: ["4", "-4", "1", "-1"],
+    a: 1,
+    s: "We know $\\alpha + \\beta = -4$ and $\\alpha\\beta = 1$. Therefore, $\\frac{1}{\\alpha} + \\frac{1}{\\beta} = \\frac{\\alpha + \\beta}{\\alpha\\beta} = \\frac{-4}{1} = -4$."
+  }
+
+      
 ]
 , 
 },
