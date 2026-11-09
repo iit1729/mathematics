@@ -5,7 +5,7 @@ window.TESTS = [
   {
     id: "quad-quiz", minutes: 0,
     title: "Quadratic Equations: Chapter Quiz",
-    desc: "Five quick questions on roots, discriminant and nature of roots.",
+    desc: " 15 MCQ quick questions on Quadratic Equations.",
     questions: [
       { q: "If $\\alpha, \\beta$ are the roots of $x^2 - 5x + 6 = 0$, then $\\alpha^2 + \\beta^2 =$", o: ["11", "13", "25", "19"], a: 1, s: "Roots are 2 and 3, so $\\alpha^2 + \\beta^2 = 4 + 9 = 13$." },
       { q: "For $k > 0$, the equation $x^2 + kx + 4 = 0$ has equal roots. Then $k =$", o: ["2", "4", "8", "16"], a: 1, s: "Equal roots need $D = k^2 - 16 = 0$, so $k = 4$." },
