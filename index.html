@@ -118,7 +118,7 @@
      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       
       <label for="n">Student name</label><input id="n" name="name" autocomplete="name" required>
-      <label for="p">Phone number</label><input id="p" name="phone" type="tel" autocomplete="tel" required>
+      <label for="p">Phone number</label><input id="p" name="phone" type="tel" autocomplete="tel" pattern="[0-9]{10}" maxlength="10" title="Please enter a 10-digit phone number" required>
       <label for="c">Course</label>
       <select id="c" name="course"><option>Class 11 Foundation</option><option>Class 12 Mastery</option><option>JEE Main</option><option>JEE Advanced</option></select>
       <label for="m">Message (optional)</label><textarea id="m" name="message"></textarea>
