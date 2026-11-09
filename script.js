@@ -14,7 +14,7 @@
 
   // Enquiry form: sends without leaving the page when a Formspree link is used.
   var f = document.querySelector('form[name="enquiry"]');
-  if (f && /formspree\.io/.test(f.action)) {
+  if (f && /formspree\.io|script\.google\.com/.test(f.action)) {
     f.addEventListener('submit', function (e) {
       e.preventDefault();
       var b = f.querySelector('button[type=submit]');
