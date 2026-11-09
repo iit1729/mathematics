@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn Mathematics | IIT1729</title>
+  <meta name="description" content="Interactive mathematics chapters for Class 11, Class 12, JEE Main and JEE Advanced.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="learning.css">
+  <link rel="stylesheet" href="learn-hub.css">
+  <script defer src="chapters.js"></script>
+  <script defer src="learn-hub.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html">IIT1729</a>
+  <nav class="main-nav" aria-label="Main"><a href="index.html">Home</a><a href="learn.html" aria-current="page">Learn</a><a href="tests.html">Tests</a><a href="index.html#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<!-- ============ HERO + SEARCH ============ -->
+<section class="hero hub-hero" id="top"><div class="container">
+  <h1>Learn Mathematics</h1>
+  <p class="lead">Chapters that make mathematics simple: moving graphs, JEE shortcuts, hints and practice. Built for Class 11, Class 12, JEE Main and JEE Advanced.</p>
+  <label class="vh" for="search">Search chapters</label>
+  <div class="search"><input id="search" type="search" placeholder="Search a chapter, for example Sets or quadratic" autocomplete="off"></div>
+</div></section>
+
+<!-- ============ COURSE CATEGORIES (these filter the chapters below) ============ -->
+<section class="section" id="categories"><div class="container">
+  <div class="section-head"><h2>Choose your course</h2><p>Select a course to see its chapters.</p></div>
+  <div class="cats" id="cats"></div>
+</div></section>
+
+<!-- ============ CHAPTER CARDS (built automatically from chapters.js) ============ -->
+<section class="section alt" id="chapters"><div class="container">
+  <div class="section-head"><h2 id="listTitle">All chapters</h2><p id="count"></p></div>
+  <div class="cards" id="cards"></div>
+  <p id="empty" class="empty" hidden>No chapter matches your search. Try a different word, or choose "All chapters".</p>
+</div></section>
+
+<!-- ============ HOW EVERY CHAPTER IS ORGANISED ============ -->
+<section class="section" id="how"><div class="container">
+  <div class="section-head"><h2>How every chapter is organised</h2><p>Each chapter follows the same 7 parts, so you always know where to look.</p></div>
+  <ol class="steps7">
+    <li><b>Introduction</b>Meaning and importance</li>
+    <li><b>Basic Concepts</b>Definitions and properties</li>
+    <li><b>Theory &amp; Theorems</b>Complete explanation</li>
+    <li><b>Formula Sheet</b>Textbook format</li>
+    <li><b>Solved Examples</b>Basic to advanced</li>
+    <li><b>Practice</b>Class 11/12 and JEE Main</li>
+    <li><b>Revision Notes</b>Summary and common mistakes</li>
+  </ol>
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="container"><p>IIT1729. Mathematics for Class 11, Class 12, JEE Main and JEE Advanced.</p></div></footer>
+</body>
+</html>

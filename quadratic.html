@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quadratic Equations: Interactive Lesson for JEE Main | IIT1729</title>
+  <meta name="description" content="Learn quadratic equations visually with a parabola lab, JEE shortcuts, hint-by-hint practice and a timed speed round.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="learning.css">
+  <link rel="stylesheet" href="chapter.css">
+  <link rel="stylesheet" href="lab.css">
+  <script defer src="lab.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html">IIT1729</a>
+  <nav class="main-nav" aria-label="Main"><a href="index.html">Home</a><a href="learn.html">Learn</a><a href="#lab">Parabola Lab</a></nav>
+</div></header>
+
+<section class="chapter-hero"><div class="container">
+  <p class="crumb"><a href="learn.html">← All chapters</a> &nbsp;|&nbsp; Class 11 › Mathematics › Quadratic Equations</p>
+  <h1>Quadratic Equations</h1>
+  <p class="lead">Learn it by moving it. Play with the parabola, pick up JEE shortcuts, practise with hints and test yourself in a timed round.</p>
+  <div class="chips"><span class="chip">Parabola Lab</span><span class="chip">Shortcut Lab</span><span class="chip">Hint Ladder</span><span class="chip">Speed Round</span><span class="chip">Flashcards</span></div>
+</div></section>
+
+<div class="container chapter-layout">
+<aside class="side">
+  <button class="syl-btn" id="sylBtn" aria-expanded="false" aria-controls="syl">Lesson contents</button>
+  <nav class="syllabus" id="syl" aria-label="Lesson contents">
+    <details class="grp" open><summary>1. Introduction</summary><a href="#s1">Meaning and importance</a></details>
+    <details class="grp" open><summary>2. Basic Concepts</summary><a href="#s2">Standard form and roots</a><a href="#lab">Parabola Lab</a></details>
+    <details class="grp" open><summary>3. Theory &amp; Theorems</summary><a href="#s3">Nature of roots</a><a href="#rel">Relations between roots</a><a href="#sign">Sign and extreme value</a><a href="#loc">Location of roots</a><a href="#common">Common roots</a><a href="#shortcuts">Shortcut Lab</a></details>
+    <details class="grp" open><summary>4. Formula Sheet</summary><a href="#s4">All formulas</a><a href="#cards">Flashcards</a></details>
+    <details class="grp" open><summary>5. Solved Examples</summary><a href="#s5">Hint Ladder</a></details>
+    <details class="grp" open><summary>6. Practice</summary><a href="#s6">NCERT-style questions</a><a href="#speed">JEE Main Speed Round</a></details>
+    <details class="grp" open><summary>7. Revision Notes</summary><a href="#s7">Quick summary</a><a href="#traps">Trap alerts</a><a href="#map">Concept map</a></details>
+  </nav>
+</aside>
+
+<main class="content">
+
+<div class="part-head first" id="s1" data-spy><span>1</span><div><h2>Introduction</h2><p>Meaning and importance of the topic.</p></div></div>
+<section class="topic">
+  <p>A <b>quadratic equation</b> is an equation of degree 2: <b>ax² + bx + c = 0</b>, where a ≠ 0. Its solutions are called the <b>roots</b> (or zeros).</p>
+  <p>Its graph is a <b>parabola</b>. The roots are the points where the parabola cuts the x-axis, so every algebra fact about roots has a picture.</p>
+  <div class="callout jee"><b>Why it matters for JEE Main</b><p>Nature and location of roots are asked directly. D = 0 gives tangency in Coordinate Geometry. Maximum and minimum values, inequalities, sequences and complex numbers all use quadratics as a tool.</p></div>
+  <div class="q" data-ans="1" data-why="With a &gt; 0 the parabola opens upward. If D &lt; 0 it never reaches the x-axis, so it stays completely above it."><p><b>Predict first.</b> If a &gt; 0 and D &lt; 0, where is the parabola? Pick one, then test it in the Parabola Lab below.</p><div class="opts"><button class="opt" data-k="0">Touches the x-axis</button><button class="opt" data-k="1">Entirely above the x-axis</button><button class="opt" data-k="2">Entirely below the x-axis</button></div><p class="why" role="status"></p></div>
+  <h3 class="sub-h">What makes this page different</h3>
+  <div class="feats">
+    <a href="#lab"><b>Parabola Lab</b>Move a, b, c and watch roots, D and sign change live.</a>
+    <a href="#shortcuts"><b>Shortcut Lab</b>JEE shortcuts that save minutes.</a>
+    <a href="#s5"><b>Hint Ladder</b>Stuck? Take one hint at a time.</a>
+    <a href="#speed"><b>Speed Round</b>5 questions, 5 minutes, JEE marking.</a>
+    <a href="#cards"><b>Flashcards</b>Flip to test every key formula.</a>
+  </div>
+</section>
+
+<div class="part-head" id="s2" data-spy><span>2</span><div><h2>Basic Concepts</h2><p>Definitions and fundamental properties.</p></div></div>
+<section class="topic">
+  <p>A root can be found in three ways: <b>factorisation</b>, <b>completing the square</b>, or the <b>quadratic formula</b>.</p>
+  <div class="formula">x = (−b ± √D) / 2a, where D = b² − 4ac</div>
+  <div class="theorem"><b>Why the formula works (proof).</b><details><summary>Show derivation</summary><p>Divide by a: x² + (b/a)x = −c/a. Add (b/2a)² to both sides: (x + b/2a)² = (b² − 4ac)/4a². Take square roots: x + b/2a = ±√D / 2a. Hence x = (−b ± √D)/2a.</p></details></div>
+  <div class="callout"><b>What each coefficient does</b><p><b>a</b> decides the opening (up if a &gt; 0, down if a &lt; 0) and the width. <b>c</b> is the y-intercept. The axis of the parabola is x = −b/2a.</p></div>
+</section>
+
+<section class="topic" id="lab" data-spy>
+  <div class="topic-head"><h2>Parabola Lab</h2></div>
+  <p>Explore: move the sliders and watch the graph and the numbers. Build: choose the roots and the lab creates the equation.</p>
+  <div class="lab">
+    <div class="labview">
+      <div class="modes"><button class="flt on" data-mode="explore">Explore a, b, c</button><button class="flt" data-mode="build">Build from roots</button></div>
+      <svg id="labSvg" viewBox="0 0 400 400" role="img" aria-label="Parabola graph"></svg>
+      <div class="ctl"><label>a<input type="range" id="la" min="-3" max="3" step="0.5" value="1"><output></output></label>
+      <span id="gExp"><label>b<input type="range" id="lb" min="-8" max="8" step="0.5" value="-4"><output></output></label>
+      <label>c<input type="range" id="lc" min="-8" max="8" step="0.5" value="3"><output></output></label></span>
+      <span id="gBuild" hidden><label>α<input type="range" id="lp" min="-6" max="6" step="0.5" value="1"><output></output></label>
+      <label>β<input type="range" id="lq" min="-6" max="6" step="0.5" value="3"><output></output></label></span></div>
+      <div class="checks"><label><input type="checkbox" id="tAxis" checked> Vertex and axis</label><label><input type="checkbox" id="tSign" checked> Sign of f(x) on the x-axis</label><label><input type="checkbox" id="tK"> Test a point k</label></div>
+      <div class="ctl" id="gK" hidden><label>k<input type="range" id="lk" min="-8" max="8" step="0.5" value="0"><output></output></label></div>
+    </div>
+    <div class="labout" id="labOut" role="status"></div>
+  </div>
+  <p class="muted small">Green part of the x-axis: f(x) &gt; 0. Red part: f(x) &lt; 0. Dark dot: vertex. Orange dots: roots.</p>
+</section>
+
+<div class="part-head" id="s3" data-spy><span>3</span><div><h2>Theory &amp; Theorems</h2><p>Complete explanation of the concepts that JEE tests.</p></div></div>
+<section class="topic"><div class="topic-head"><h2>Nature of roots</h2></div>
+  <div class="tscroll"><table class="ftable"><thead><tr><th>Discriminant</th><th>Roots (a, b, c real)</th></tr></thead><tbody>
+  <tr><td>D &gt; 0</td><td>Real and distinct. Rational if D is a perfect square and a, b, c are rational. Otherwise irrational (and then they come as a conjugate pair p ± √q when a, b, c are rational).</td></tr>
+  <tr><td>D = 0</td><td>Real and equal: x = −b/2a.</td></tr>
+  <tr><td>D &lt; 0</td><td>Non-real complex roots, a conjugate pair p ± iq.</td></tr></tbody></table></div>
+</section>
+
+<section class="topic" id="rel" data-spy><div class="topic-head"><h2>Relations between roots</h2></div>
+  <div class="formula">α + β = −b/a, &nbsp; αβ = c/a</div>
+  <div class="theorem"><b>Theorem (symmetric expressions).</b> Never solve for the roots. Write everything in S = α + β and P = αβ.<details><summary>Results and proof idea</summary><p>α² + β² = S² − 2P. α³ + β³ = S³ − 3PS. 1/α + 1/β = S/P. (α − β)² = S² − 4P = D/a², so |α − β| = √D / |a|.</p></details></div>
+  <div class="formula">Equation with roots α, β: &nbsp; x² − (α + β)x + αβ = 0</div>
+  <div class="ex"><p><span class="lvl mid">Intermediate</span><b>Example.</b> Form the equation whose roots are the squares of the roots of x² − 5x + 3 = 0.</p><details><summary>Show solution</summary><p>S = 5, P = 3. New sum = α² + β² = 25 − 6 = 19. New product = P² = 9. Equation: x² − 19x + 9 = 0.</p></details></div>
+</section>
+
+<section class="topic" id="sign" data-spy><div class="topic-head"><h2>Sign and extreme value of ax² + bx + c</h2></div>
+  <ul><li>If D &lt; 0: f(x) has the same sign as a for every real x.</li>
+  <li>If D ≥ 0 (roots α ≤ β): f(x) has the sign of a outside the roots, and the opposite sign between them.</li>
+  <li>Vertex at x = −b/2a, with value −D/4a. If a &gt; 0 this is the <b>minimum</b>. If a &lt; 0 it is the <b>maximum</b>.</li></ul>
+  <div class="callout jee"><b>JEE use</b><p>"ax² + bx + c &gt; 0 for all x" means a &gt; 0 and D &lt; 0. Turn the Lab's sign colours on to see why.</p></div>
+</section>
+
+<section class="topic" id="loc" data-spy><div class="topic-head"><h2>Location of roots</h2></div>
+  <p>Let f(x) = ax² + bx + c and let the roots be real. Test a number k with the "Test a point k" option in the Lab.</p>
+  <div class="tscroll"><table class="ftable"><thead><tr><th>Situation</th><th>Conditions</th></tr></thead><tbody>
+  <tr><td>Both roots &gt; k</td><td>D ≥ 0, −b/2a &gt; k, a·f(k) &gt; 0</td></tr>
+  <tr><td>Both roots &lt; k</td><td>D ≥ 0, −b/2a &lt; k, a·f(k) &gt; 0</td></tr>
+  <tr><td>k lies between the roots</td><td>a·f(k) &lt; 0</td></tr>
+  <tr><td>Both roots in (k₁, k₂)</td><td>D ≥ 0, k₁ &lt; −b/2a &lt; k₂, a·f(k₁) &gt; 0, a·f(k₂) &gt; 0</td></tr>
+  <tr><td>Exactly one root in (k₁, k₂)</td><td>f(k₁)·f(k₂) &lt; 0 (check the end points separately when f(k₁) or f(k₂) is 0)</td></tr></tbody></table></div>
+</section>
+
+<section class="topic" id="common" data-spy><div class="topic-head"><h2>Common roots</h2></div>
+  <p>If a₁x² + b₁x + c₁ = 0 and a₂x² + b₂x + c₂ = 0 have exactly one common root, then:</p>
+  <div class="formula">(c₁a₂ − c₂a₁)² = (a₁b₂ − a₂b₁)(b₁c₂ − b₂c₁)</div>
+  <p>If both roots are common, then a₁/a₂ = b₁/b₂ = c₁/c₂.</p>
+</section>
+
+<section class="topic" id="shortcuts" data-spy><div class="topic-head"><h2>Shortcut Lab</h2></div>
+  <p>Each card is a shortcut that saves solving time in JEE Main. Tap a card to see a quick use.</p>
+  <div class="short">
+    <button class="sc"><b>a + b + c = 0</b><span class="more">Then x = 1 is a root and the other root is c/a. Check: 3x² − 5x + 2 = 0 has roots 1 and 2/3.</span></button>
+    <button class="sc"><b>a − b + c = 0</b><span class="more">Then x = −1 is a root. Check: x² + 4x + 3 = 0 has roots −1 and −3.</span></button>
+    <button class="sc"><b>Ratio of roots m : n</b><span class="more">mn·b² = (m + n)²·ac. If one root is 3 times the other: 3b² = 16ac.</span></button>
+    <button class="sc"><b>Roots differ by d</b><span class="more">|α − β| = √D / |a|, so D = a²d². If the roots differ by 1 in x² − px + q = 0, then p² − 4q = 1.</span></button>
+    <button class="sc"><b>Signs of roots</b><span class="more">Both positive: D ≥ 0, −b/a &gt; 0, c/a &gt; 0. Both negative: D ≥ 0, −b/a &lt; 0, c/a &gt; 0. Opposite signs: c/a &lt; 0.</span></button>
+    <button class="sc"><b>Special equations</b><span class="more">Roots equal in size but opposite in sign: b = 0. Roots reciprocal of each other: a = c.</span></button>
+  </div>
+</section>
+
+<div class="part-head" id="s4" data-spy><span>4</span><div><h2>Formula Sheet</h2><p>All important formulas in textbook format.</p></div></div>
+<div class="tscroll"><table class="ftable"><thead><tr><th>Topic</th><th>Formula or result</th></tr></thead><tbody>
+<tr><td>Quadratic formula</td><td>x = (−b ± √D)/2a, D = b² − 4ac</td></tr>
+<tr><td>Sum and product</td><td>α + β = −b/a, αβ = c/a</td></tr>
+<tr><td>Symmetric expressions</td><td>α² + β² = S² − 2P<br>α³ + β³ = S³ − 3PS<br>|α − β| = √D/|a|</td></tr>
+<tr><td>Form the equation</td><td>x² − Sx + P = 0</td></tr>
+<tr><td>Vertex</td><td>x = −b/2a, value = −D/4a</td></tr>
+<tr><td>Sign of f(x)</td><td>D &lt; 0: sign of a for all x<br>D ≥ 0: sign of a outside the roots, opposite between them</td></tr>
+<tr><td>Ratio of roots m : n</td><td>mn·b² = (m + n)²·ac</td></tr>
+<tr><td>One common root</td><td>(c₁a₂ − c₂a₁)² = (a₁b₂ − a₂b₁)(b₁c₂ − b₂c₁)</td></tr>
+<tr><td>Quick roots</td><td>a + b + c = 0 ⇒ x = 1. &nbsp; a − b + c = 0 ⇒ x = −1.</td></tr></tbody></table></div>
+<section class="topic" id="cards" data-spy><div class="topic-head"><h2>Flashcards</h2></div>
+  <p>Say the answer first, then tap the card to flip it.</p>
+  <div class="fcards">
+    <button class="fcard"><span class="front">Sum of roots</span><span class="back">−b/a</span></button>
+    <button class="fcard"><span class="front">Product of roots</span><span class="back">c/a</span></button>
+    <button class="fcard"><span class="front">|α − β|</span><span class="back">√D / |a|</span></button>
+    <button class="fcard"><span class="front">α² + β²</span><span class="back">(α + β)² − 2αβ</span></button>
+    <button class="fcard"><span class="front">α³ + β³</span><span class="back">(α + β)³ − 3αβ(α + β)</span></button>
+    <button class="fcard"><span class="front">Vertex of the parabola</span><span class="back">x = −b/2a, value = −D/4a</span></button>
+    <button class="fcard"><span class="front">Equal roots condition</span><span class="back">D = 0, root = −b/2a</span></button>
+    <button class="fcard"><span class="front">k lies between the roots</span><span class="back">a·f(k) &lt; 0</span></button>
+  </div>
+</section>
+
+<div class="part-head" id="s5" data-spy><span>5</span><div><h2>Solved Examples</h2><p>Basic, intermediate and advanced: take one hint at a time.</p></div></div>
+<section class="topic"><p>Choose an answer first. If you are stuck, open Hint 1, then Hint 2, and only then the full solution.</p>
+  <div class="ladder" data-ans="0" data-h1="You do not need the roots. Use α + β = −b/a and αβ = c/a." data-h2="α² + β² = (α + β)² − 2αβ." data-sol="S = 5 and P = 3, so α² + β² = 25 − 6 = 19.">
+    <p><span class="lvl">Basic</span><b>Example 1.</b> If α, β are the roots of x² − 5x + 3 = 0, then α² + β² =</p>
+    <div class="opts"><button class="opt" data-k="0">19</button><button class="opt" data-k="1">25</button><button class="opt" data-k="2">31</button><button class="opt" data-k="3">13</button></div>
+    <div class="lbtns"><button class="hbtn" data-h="1">Hint 1</button><button class="hbtn" data-h="2" disabled>Hint 2</button><button class="hbtn" data-h="s" disabled>Full solution</button></div><div class="lout" role="status"></div></div>
+  <div class="ladder" data-ans="1" data-h1="Real roots means D ≥ 0." data-h2="D = k² − 16 ≥ 0. Solve this inequality carefully." data-sol="k² ≥ 16, so k ≤ −4 or k ≥ 4. Remember it is two separate pieces, not −4 ≤ k ≤ 4.">
+    <p><span class="lvl mid">Intermediate</span><b>Example 2.</b> The equation x² + kx + 4 = 0 has real roots for</p>
+    <div class="opts"><button class="opt" data-k="0">−4 &lt; k &lt; 4</button><button class="opt" data-k="1">k ≤ −4 or k ≥ 4</button><button class="opt" data-k="2">k ≥ 4 only</button><button class="opt" data-k="3">−4 ≤ k ≤ 4</button></div>
+    <div class="lbtns"><button class="hbtn" data-h="1">Hint 1</button><button class="hbtn" data-h="2" disabled>Hint 2</button><button class="hbtn" data-h="s" disabled>Full solution</button></div><div class="lout" role="status"></div></div>
+  <div class="ladder" data-ans="1" data-h1="Let the roots be m and 3m." data-h2="Sum: 4m = 4, so m = 1. Then use the product." data-sol="Roots m and 3m. Sum 4m = 4 gives m = 1, so the roots are 1 and 3. Product = k = 3. (Shortcut: 3b² = 16ac gives 48 = 16k, so k = 3.)">
+    <p><span class="lvl mid">Intermediate</span><b>Example 3.</b> One root of x² − 4x + k = 0 is three times the other. Then k =</p>
+    <div class="opts"><button class="opt" data-k="0">1</button><button class="opt" data-k="1">3</button><button class="opt" data-k="2">4</button><button class="opt" data-k="3">12</button></div>
+    <div class="lbtns"><button class="hbtn" data-h="1">Hint 1</button><button class="hbtn" data-h="2" disabled>Hint 2</button><button class="hbtn" data-h="s" disabled>Full solution</button></div><div class="lout" role="status"></div></div>
+  <div class="ladder" data-ans="0" data-h1="The discriminant is a perfect square, so factorise the equation." data-h2="x² − 2mx + m² − 1 = (x − m)² − 1, so the roots are m − 1 and m + 1." data-sol="Roots m − 1 and m + 1. Both lie between −2 and 4: m − 1 &gt; −2 gives m &gt; −1, and m + 1 &lt; 4 gives m &lt; 3. So −1 &lt; m &lt; 3.">
+    <p><span class="lvl jee">Advanced</span><b>Example 4.</b> Both roots of x² − 2mx + m² − 1 = 0 lie between −2 and 4. Then</p>
+    <div class="opts"><button class="opt" data-k="0">−1 &lt; m &lt; 3</button><button class="opt" data-k="1">0 &lt; m &lt; 4</button><button class="opt" data-k="2">−2 &lt; m &lt; 4</button><button class="opt" data-k="3">1 &lt; m &lt; 3</button></div>
+    <div class="lbtns"><button class="hbtn" data-h="1">Hint 1</button><button class="hbtn" data-h="2" disabled>Hint 2</button><button class="hbtn" data-h="s" disabled>Full solution</button></div><div class="lout" role="status"></div></div>
+</section>
+
+<div class="part-head" id="s6" data-spy><span>6</span><div><h2>Practice</h2><p>Class 11/12 board-level questions and a JEE Main speed round.</p></div></div>
+<section class="topic"><p>NCERT-style questions (written in the style of the textbook, not copied from it):</p>
+  <div class="ex"><p><b>Q1.</b> Solve 2x² − 7x + 3 = 0 by factorisation.</p><details><summary>Show answer</summary><p>2x² − 6x − x + 3 = 2x(x − 3) − 1(x − 3) = (2x − 1)(x − 3). So x = 1/2 or x = 3.</p></details></div>
+  <div class="ex"><p><b>Q2.</b> Find the nature of the roots of 2x² − 4x + 3 = 0.</p><details><summary>Show answer</summary><p>D = 16 − 24 = −8 &lt; 0, so the roots are non-real (complex conjugates).</p></details></div>
+  <div class="ex"><p><b>Q3.</b> If α, β are the roots of x² − 6x + 4 = 0, find α² + β².</p><details><summary>Show answer</summary><p>S = 6, P = 4. α² + β² = 36 − 8 = 28.</p></details></div>
+  <div class="ex"><p><b>Q4.</b> Form the quadratic equation with roots 3 + √2 and 3 − √2.</p><details><summary>Show answer</summary><p>S = 6, P = 9 − 2 = 7. The equation is x² − 6x + 7 = 0.</p></details></div>
+  <div class="ex"><p><b>Q5.</b> Find k for which x² + kx + 9 = 0 has equal roots.</p><details><summary>Show answer</summary><p>D = k² − 36 = 0, so k = 6 or k = −6.</p></details></div>
+  <div class="ex"><p><b>Q6.</b> Find the maximum value of −x² + 4x + 1.</p><details><summary>Show answer</summary><p>The vertex is at x = −b/2a = 2. Value = −4 + 8 + 1 = 5.</p></details></div>
+</section>
+
+<section class="topic" id="speed" data-spy><div class="topic-head"><h2>JEE Main Speed Round</h2></div>
+  <p>5 questions in 5 minutes. Marking: +4 for correct, −1 for wrong, 0 for unattempted.</p>
+  <div id="speedBox"><button class="btn" id="speedStart">Start the round</button></div>
+</section>
+
+<div class="part-head" id="s7" data-spy><span>7</span><div><h2>Revision Notes</h2><p>Quick summary and common mistakes.</p></div></div>
+<section class="block summary" style="padding-top:20px"><ul>
+  <li>ax² + bx + c = 0 (a ≠ 0) has roots x = (−b ± √D)/2a with D = b² − 4ac.</li>
+  <li>D &gt; 0 real distinct, D = 0 real equal, D &lt; 0 complex conjugates.</li>
+  <li>α + β = −b/a and αβ = c/a. Write every symmetric expression in terms of these two.</li>
+  <li>For a &gt; 0 the parabola has a minimum at x = −b/2a with value −D/4a. For a &lt; 0 it has a maximum.</li>
+  <li>Location of roots: check D, the axis −b/2a, and the sign of a·f(k).</li>
+  <li>Shortcuts: a + b + c = 0 ⇒ root 1. Ratio m : n ⇒ mn·b² = (m + n)²·ac.</li></ul></section>
+
+<section class="topic" id="traps" data-spy><div class="topic-head"><h2>Trap alerts</h2></div>
+<ul class="mist">
+<li>Dividing both sides by x loses the root x = 0. Factorise instead.</li>
+<li>"Real roots" means D ≥ 0, but "real and distinct" means D &gt; 0.</li>
+<li>In (k − 1)x² + 3x + 2 = 0, the equation is quadratic only when k ≠ 1.</li>
+<li>Equations with √ or logarithms can give extra roots. Always substitute back.</li>
+<li>For location of roots, one condition is not enough: check D, the axis and a·f(k) together.</li>
+<li>Solving k² ≥ 16 as −4 ≤ k ≤ 4 reverses the inequality.</li></ul></section>
+
+<section class="topic" id="map" data-spy><div class="topic-head"><h2>Concept map</h2></div>
+  <div class="cmap"><div class="top">ax² + bx + c = 0</div>
+  <div class="row3"><div><b>D = b² − 4ac</b>Nature of roots</div><div><b>S = −b/a, P = c/a</b>Symmetric expressions, forming equations</div><div><b>f(x) and its graph</b>Sign, extreme value, location of roots</div></div>
+  <div class="row3"><div>D = 0 also gives tangency conditions</div><div>Shortcuts: ratio, common roots</div><div>Max-min and inequalities</div></div></div>
+</section>
+
+</main>
+</div>
+
+<footer class="site-footer"><div class="container"><p>IIT1729. Mathematics for Class 11, Class 12, JEE Main and JEE Advanced.</p></div></footer>
+</body>
+</html>
