@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Study Resources | IIT1729</title>
+<meta name="description" content="Mathematics PDFs for Class 11, Class 12, JEE Main and JEE Advanced: notes, formula sheets and practice papers.">
+<meta name="theme-color" content="#1B2A6B">
+<link rel="icon" href="favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="resources.css">
+<script defer src="resources-data.js"></script>
+<script defer src="resources.js"></script>
+</head>
+<body>
+<!-- Header: same as the home page -->
+<div class="flag"></div>
+<header class="top"><div class="wrap bar">
+  <a class="brand" href="index.html" aria-label="IIT1729 home"><img src="logo.png" alt="IIT1729"></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main"><a href="index.html#story">Our name</a><a href="index.html#courses">Courses</a><a href="index.html#syllabus">Syllabus</a><a href="tests.html">Tests</a><a href="resources.html" aria-current="page">Resources</a><a href="index.html#method">How we teach</a><a href="index.html#watch">Watch</a><a href="index.html#faq">FAQ</a><a class="btn sm" href="index.html#contact">Join a batch</a></nav>
+</div></header>
+
+<main>
+<!-- Hero with search -->
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="pill">Notes · Formula sheets · Practice papers </span>
+    <h1>Study Resources</h1>
+    <p class="lead">PDFs for Class 11, Class 12, JEE Main and JEE Advanced. View them here or download them to study offline.</p>
+    <form class="search" role="search" id="searchForm">
+      <label class="vh" for="search">Search resources</label>
+      <input id="search" type="search" placeholder="Search by title or chapter, for example Sets" autocomplete="off">
+      <button class="btn sm" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="stack" aria-hidden="true">
+    <div class="sheet s3"><i></i><i></i><i></i></div><div class="sheet s2"><i></i><i></i><i></i></div>
+    <div class="sheet s1"><span>PDF</span><i></i><i></i><i></i><i></i></div>
+  </div>
+</div></section>
+
+<!-- Files -->
+<section class="sec" id="list"><div class="wrap">
+  <div class="tabs" id="tabs" role="group" aria-label="Choose a course"></div>
+  <div class="bar2">
+    <div class="types" id="types" role="group" aria-label="Choose a type of file"></div>
+    <p id="count" aria-live="polite"></p>
+  </div>
+  <div class="cards" id="cards"></div>
+  <p class="note" id="note" hidden></p>
+  <noscript><p class="note">Please turn on JavaScript to see the resources list.</p></noscript>
+</div></section>
+
+<section class="sec alt"><div class="wrap cta">
+  <div><h2>Cannot find what you need?</h2><p>Tell us the chapter and class. We will add it.</p></div>
+  <div class="cta-btns"><a class="btn" href="index.html#contact">Send a request</a><a class="btn ghost" href="learn.html">Learn online</a></div>
+</div></section>
+</main>
+
+<!-- Footer: same as the home page -->
+<footer><div class="wrap"><img src="logo.png" alt="IIT1729"><p>Mathematics for JEE Main and Advanced, Class 11 and 12. &copy; <span id="year">2026</span> IIT1729</p></div></footer>
+
+<!-- PDF viewer window -->
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="mbox">
+    <div class="mbar"><b id="mTitle"></b><div class="mbtns"><a class="btn sm ghost" id="mOpen" target="_blank" rel="noopener">Open in Drive</a><a class="btn sm" id="mDown" target="_blank" rel="noopener">Download</a><button class="x" id="mClose" aria-label="Close viewer">×</button></div></div>
+    <iframe id="mFrame" title="PDF preview"></iframe>
+    <p class="mnote">If the preview does not load, use "Open in Drive".</p>
+  </div>
+</div>
+</body>
+</html>
