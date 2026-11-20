@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Practice Tests and Mock Tests | IIT1729</title>
+<meta name="description" content="Chapter tests and timed mock tests for Class 11, Class 12, JEE Main and JEE Advanced mathematics.">
+<meta name="theme-color" content="#1B2A6B">
+<link rel="icon" href="favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tests.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script defer src="questions.js"></script>
+<script defer src="tests.js"></script>
+</head>
+<body>
+<!-- Header: same as the home page -->
+<div class="flag"></div>
+<header class="top"><div class="wrap bar">
+  <a class="brand" href="index.html" aria-label="IIT1729 home"><img src="logo.png" alt="IIT1729"></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main"><a href="index.html#story">Our name</a><a href="index.html#courses">Courses</a><a href="index.html#syllabus">Syllabus</a><a href="tests.html" aria-current="page">Tests</a><a href="resources.html">Resources</a><a href="index.html#method">How we teach</a><a href="index.html#watch">Watch</a><a href="index.html#faq">FAQ</a><a class="btn sm" href="index.html#contact">Join a batch</a></nav>
+</div></header>
+
+<main>
+<div id="home">
+  <section class="hero"><div class="wrap hero-grid">
+    <div>
+      <span class="pill">Chapter tests · Mock tests</span>
+      <h1>Practice Tests</h1>
+      <p class="lead">Test yourself chapter by chapter, then take a full timed mock test. Choose your course below.</p>
+      <a class="btn" href="#list">Choose your course</a>
+    </div>
+    <div class="stack" aria-hidden="true">
+      <div class="sheet s3"><i></i><i></i><i></i></div><div class="sheet s2"><i></i><i></i><i></i></div>
+      <div class="sheet s1"><span>TEST</span><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div></section>
+
+  <section class="sec" id="list"><div class="wrap">
+    <div class="tabs" id="tabs" role="group" aria-label="Choose a course"></div>
+    <div id="panel"></div>
+    <noscript><p class="empty">Please turn on JavaScript to take the tests.</p></noscript>
+  </div></section>
+
+  <section class="sec alt"><div class="wrap cta">
+    <div><h2>Revise before you test</h2><p>Read the chapter lessons and download notes and formula sheets.</p></div>
+    <div class="cta-btns"><a class="btn" href="index.html">Watch free lessons</a><a class="btn ghost" href="resources.html">Study resources</a></div>
+  </div></section>
+</div>
+
+<!-- the test screen (shown when a test is started) -->
+<section class="sec" id="runSec" hidden><div class="wrap"><div id="runner"></div></div></section>
+</main>
+
+<!-- Footer: same as the home page -->
+<footer><div class="wrap"><img src="logo.png" alt="IIT1729"><p>Mathematics for JEE Main and Advanced, Class 11 and 12. &copy; <span id="year">2026</span> IIT1729</p></div></footer>
+</body>
+</html>
