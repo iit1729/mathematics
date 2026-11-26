@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://iit1729.github.io/mathematics/sitemap.xml
+
+Sitemap: https://iit1729.com/sitemap.xml
