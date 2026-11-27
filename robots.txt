@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /thanks.html
 
 Sitemap: https://iit1729.com/sitemap.xml
